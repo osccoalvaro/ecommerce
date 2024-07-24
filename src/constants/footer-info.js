@@ -1,3 +1,3 @@
 export const FOOTER_INFO = {
-    content: "Ecommerce Shop 2024"
+    content: "Tienda 2024"
 }

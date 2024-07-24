@@ -1,14 +1,9 @@
 {
   "name": "ecommerce-website",
   "private": true,
-  "homepage": "https://osccoalvaro.github.io/ecommerce",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",

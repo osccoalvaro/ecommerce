@@ -42,14 +42,14 @@ const ProductDetails = () => {
               {title}
             </h1>
             <div className="text-base md:text-lg lg:text-xl text-red-500 font-medium mb-6">
-              $ {price}
+              S/ {price}
             </div>
             <p className="mb-8 text-sm">{description}</p>
             <button
               className="mb-3 bg-primary py-4 px-8 text-white text-base"
               onClick={() => addToCart(product, product.id)}
             >
-              Add to chart
+              Agregar al carrito
             </button>
           </div>
         </div>

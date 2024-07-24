@@ -18,7 +18,7 @@ const Sidebar = () => {
     >
       <div className="flex items-center justify-between py-6 border-b">
         <div className="uppercase text-sm font-semibold">
-          Shopping Bag ({itemAmount})
+          Carrito ({itemAmount})
         </div>
         <div
           className="cursor-pointer w-8 h-8 flex justify-center items-center"
@@ -41,7 +41,7 @@ const Sidebar = () => {
       <div className="flex flex-col gap-y-3 py-4 mt-4">
         <div className="flex w-full justify-between items-center">
           <div className="uppercase text-semibold">
-            <span className="mr-2">Total:</span>$ {total}
+            <span className="mr-2">Total:</span>S/ {total}
           </div>
           <div
             className="
@@ -57,13 +57,13 @@ const Sidebar = () => {
           to={"/"}
           className="bg-gray-200 flex p-4 justify-center items-center text-primary w-full font-medium"
         >
-          View Cart
+          WhatsApp
         </Link>
         <Link
           to={"/"}
           className="bg-primary flex p-4 justify-center items-center text-white w-full font-medium"
         >
-          Checkout
+          Continuar compra
         </Link>
       </div>
     </div>
