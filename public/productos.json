@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "title": "Producto 1",
+      "price": 29.99,
+      "description": "Descripción del Producto 1",
+      "category": "Laptop",
+      "image": "/laptop.webp"
+    },
+    {
+      "id": 2,
+      "title": "Producto 2",
+      "price": 19.99,
+      "description": "Descripción del Producto 2",
+      "category": "Componentes",
+      "image": "/ssd.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Producto 3",
+        "price": 19.99,
+        "description": "Descripción del Producto 3",
+        "category": "Laptop",
+        "image": "/laptop.webp"
+    },
+    {
+        "id": 4,
+        "title": "Producto 4",
+        "price": 19.99,
+        "description": "Descripción del Producto 4",
+        "category": "Perifericos",
+        "image": "/teclado.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Producto 5",
+        "price": 19.99,
+        "description": "Descripción del Producto 5",
+        "category": "Licencias",
+        "image": "/licencia1.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Producto 6",
+        "price": 19.99,
+        "description": "Descripción del Producto 6",
+        "category": "Licencias",
+        "image": "/licencia2.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Producto 7",
+        "price": 19.99,
+        "description": "Descripción del Producto 7",
+        "category": "Perifericos",
+        "image": "/teclado.jpg"
+    }
+  ]
+  
