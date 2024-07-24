@@ -6,6 +6,6 @@ import { ViteAliases } from 'vite-aliases'
 export default defineConfig({
   plugins: [react(),  ViteAliases()],
 
+  base: '/ecommerce'
   
-
 })
