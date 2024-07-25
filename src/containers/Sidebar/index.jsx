@@ -5,7 +5,6 @@ import CartItem from "~components/CartItem";
 import { SidebarContext } from "~contexts/SidebarContext";
 import { CartContext } from "~contexts/CartContext";
 import { useContext } from "react";
-import queryString from 'query-string';
 
 const Sidebar = () => {
   const { isOpen, handleClose } = useContext(SidebarContext);
@@ -13,13 +12,19 @@ const Sidebar = () => {
 
   const handleWhatsAppMessage = () => {
     const phoneNumber = '51997567217'; // Reemplaza con el número de teléfono de la empresa
-    const productList = cart.map(item => `${item.title} (S/ ${item.price})`).join(', ');
-    const message = `Hola, estoy interesado en los siguientes productos: ${productList}. Total: S/ ${total}.`;
+    const productList = cart.map(item => {
+      return `• ${item.title} (S/ ${item.price}) https://ecommerce-alk.pages.dev/product/${item.id}`;
+    }).join('\n'); // \n es el carácter de salto de línea
+    
+    const message = `Hola, estoy interesado en los siguientes productos:\n${productList}\n\nTotal: S/ ${total}`;
     const encodedMessage = encodeURIComponent(message);
     const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
     window.open(url, '_blank');
   };
+
+  
+
 
   return (
     <div

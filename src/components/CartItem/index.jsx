@@ -60,9 +60,9 @@ const CartItem = ({ item }) => {
               </div>
             </div>
             <div className="flex-1 flex items-center justify-around">
-              $ {price}
+              S/ {price}
             </div>
-            <div className="flex-1 flex justify-end items-center text-primary font-medium">{`$ ${getFinalPrice(
+            <div className="flex-1 flex justify-end items-center text-primary font-medium">{`S/ ${getFinalPrice(
               price,
               amount
             )}`}</div>

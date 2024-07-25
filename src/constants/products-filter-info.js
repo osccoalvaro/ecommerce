@@ -1,1 +1,1 @@
-export const FILTER_ALL = "All"
+export const FILTER_ALL = "Todos"
