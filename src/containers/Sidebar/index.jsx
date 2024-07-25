@@ -5,10 +5,22 @@ import CartItem from "~components/CartItem";
 import { SidebarContext } from "~contexts/SidebarContext";
 import { CartContext } from "~contexts/CartContext";
 import { useContext } from "react";
+import queryString from 'query-string';
 
 const Sidebar = () => {
   const { isOpen, handleClose } = useContext(SidebarContext);
   const { cart, clearCart, total, itemAmount } = useContext(CartContext);
+
+  const handleWhatsAppMessage = () => {
+    const phoneNumber = '51997567217'; // Reemplaza con el número de teléfono de la empresa
+    const productList = cart.map(item => `${item.title} (S/ ${item.price})`).join(', ');
+    const message = `Hola, estoy interesado en los siguientes productos: ${productList}. Total: S/ ${total}.`;
+    const encodedMessage = encodeURIComponent(message);
+    const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+    window.open(url, '_blank');
+  };
+
   return (
     <div
       className={`${
@@ -53,18 +65,13 @@ const Sidebar = () => {
             <FiTrash2 />
           </div>
         </div>
-        <Link
-          to={"/"}
-          className="bg-gray-200 flex p-4 justify-center items-center text-primary w-full font-medium"
-        >
-          WhatsApp
-        </Link>
-        <Link
-          to={"/"}
+
+        <button
+          onClick={handleWhatsAppMessage}
           className="bg-primary flex p-4 justify-center items-center text-white w-full font-medium"
         >
           Continuar compra
-        </Link>
+        </button>
       </div>
     </div>
   );
