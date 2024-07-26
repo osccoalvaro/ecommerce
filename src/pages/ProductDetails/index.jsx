@@ -1,3 +1,5 @@
+import React from "react"; // Asegúrate de importar React
+
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { CartContext } from "~contexts/CartContext";
@@ -44,7 +46,17 @@ const ProductDetails = () => {
             <div className="text-base md:text-lg lg:text-xl text-red-500 font-medium mb-6">
               S/ {price}
             </div>
-            <p className="mb-8 text-sm">{description}</p>
+            
+
+            <p className="mb-8 text-sm">
+              {description.split('\n').map((line, index) => (
+                <React.Fragment key={index}>
+                  {line}
+                  <br />
+                </React.Fragment>
+              ))}
+            </p>
+
             <button
               className="mb-3 bg-primary py-4 px-8 text-white text-base"
               onClick={() => addToCart(product, product.id)}

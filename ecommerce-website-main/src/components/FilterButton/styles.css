@@ -11,7 +11,7 @@
 .filter__button__span {
     color: rgb(239 68 68);
     font-size: 14px;
-    font-family: Poppins;
+    font-family: Jost;
     font-weight: 700;
     line-height: 16.56px;
     text-transform: uppercase;
@@ -39,7 +39,7 @@
 .filter__button__span__selected {
     font-style: normal;
     font-weight: 700;
-    font-family: Poppins;
+    font-family: Jost;
     font-size: 14px;
     line-height: 16.56px;
     text-transform: uppercase;

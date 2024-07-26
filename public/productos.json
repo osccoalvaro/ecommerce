@@ -1,9 +1,9 @@
 [
     {
       "id": 1,
-      "title": "Producto 1",
+      "title": "LAPTOP HP RYZEN 3 7330U 255 G10",
       "price": 29.99,
-      "description": "Descripción del Producto 1",
+      "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
       "category": "Laptop",
       "image": "/laptop.webp"
     },
@@ -17,41 +17,41 @@
     },
     {
         "id": 3,
-        "title": "Producto 3",
+        "title": "LAPTOP HP CORE I7-12650H GAMING VICTUS 15-FA0007LA",
         "price": 19.99,
-        "description": "Descripción del Producto 3",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "category": "Laptop",
         "image": "/laptop.webp"
     },
     {
         "id": 4,
-        "title": "Producto 4",
+        "title": "COMBO 2 EN UNO LOGITECH MK120 (920-004428) TECLADO | MOUSE",
         "price": 19.99,
-        "description": "Descripción del Producto 4",
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Perifericos",
         "image": "/teclado.jpg"
     },
     {
         "id": 5,
-        "title": "Producto 5",
+        "title": "ANTIVIRUS AVAST PREMIUM SECURITY (7153271) 1 PC",
         "price": 19.99,
-        "description": "Descripción del Producto 5",
+        "description": "Marca: ESET\nModelo: NOD 32\nCapacidad: 1 PC\nRequisitos del sistema: Windows\nTiempo: 12 meses",
         "category": "Licencias",
         "image": "/licencia1.jpg"
     },
     {
         "id": 6,
-        "title": "Producto 6",
+        "title": "ANTIVIRUS ESET NOD 32 ( S11010222) 2024 PARA 1 PC",
         "price": 19.99,
-        "description": "Descripción del Producto 6",
+        "description": "Marca: ESET\nModelo: NOD 32\nCapacidad: 1 PC\nRequisitos del sistema: Windows\nTiempo: 12 meses",
         "category": "Licencias",
         "image": "/licencia2.jpg"
     },
     {
         "id": 7,
-        "title": "Producto 7",
+        "title": "COMBO 2 EN UNO LOGITECH MK120 (920-004428) TECLADO | MOUSE",
         "price": 19.99,
-        "description": "Descripción del Producto 7",
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Perifericos",
         "image": "/teclado.jpg"
     }

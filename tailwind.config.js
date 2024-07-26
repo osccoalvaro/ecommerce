@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-      primary: 'Poppins',
+      primary: "Jost",
     },
     container: {
       padding: {
