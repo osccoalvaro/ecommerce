@@ -1,51 +1,40 @@
-import { Link } from "react-router-dom";
-import { HERO_INFO } from "~/constants";
-//import ManImg from "~assets/man_hero.png";
-import ManImg from "~assets/laptop4.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules"; // Importación ajustada
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import ManImg from "~assets/slider1.webp";
+import LaptopImg2 from "~assets/slider2.jpg";
+import LaptopImg3 from "~assets/slider3.jpg";
 
 const Hero = () => {
-  const { prev, saleTitle, underTitle, content, description } = HERO_INFO;
+  // Array de imágenes para el slider
+  const images = [ManImg, LaptopImg2, LaptopImg3];
+
   return (
-    /*<section
-      className="
-                h-[800px] bg-hero 
-                bg-no-repeat bg-cover bg-center py-24
-                "
-    >*/
-    <section
-      className="
-                h-[800px] bg-amber-400 
-                bg-no-repeat bg-cover bg-center py-24
-                "
-    >
-      <div className="container mx-auto flex justify-around justify-center items-center h-full">
-        <div className="flex flex-col justify-center">
-          <div className="font-semibold flex items-center uppercase">
-            <div className="w-10 h-[2px] bg-red-500 mr-3"></div>
-            <span>{prev}</span>
-          </div>
-          <div className="text-4xl xs:text-5xl sm:text-6xl xl:text-[70px] leading-[1.1] font-light mb-4 uppercase">
-            <h1>{saleTitle}</h1>
-            <p>{underTitle}</p>
-            <p className="font-semibold">{content}</p>
-          </div>
-          <Link
-            to={"/"}
-            className="self-start uppercase font-semibold border-b-2 border-primary"
-          >
-            {description}
-          </Link>
-        </div>
-        <div className="hidden lg:block">
-          <img
-            //className="-mt-[33%] max-h-[920px] max-w-[420px] xl:max-w-none"
-            className=" xl:max-w-none"
-            src={ManImg}
-            alt="Man"
-          />
-        </div>
-      </div>
+    <section className="bg-amber-400 ">
+        <Swiper 
+          modules={[Navigation, Pagination]}
+          navigation
+          pagination={{ clickable: true }}
+          loop={true}
+          className="h-full"
+        >
+          {images.map((image, index) => (
+            <SwiperSlide key={index} className="flex justify-center items-center">
+              <img
+                className="h-full object-cover"
+                src={image}
+                alt={`Slide ${index + 1}`}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+     
     </section>
   );
 };
+
 export default Hero;

@@ -1,11 +1,22 @@
 .filter__button {
     display: flex;
-    padding: 4px 8px;
+    flex-direction: column;
     align-items: center;
-    gap: 4px; 
-    border-radius: 8px;
-    background: #fff;
-    border: 1px solid rgb(239 68 68);
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #e4e4e4; /* Blanco para las líneas */
+    background-color: #fff; /* Fondo oscuro */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.filter__button:hover {
+    background-color: #333; /* aquí */
 }
 
 .filter__button__span {
@@ -18,22 +29,18 @@
     font-style: normal;
 }
 
-.filter__button:active {
-    border: 1px solid rgb(239 68 68);
-}
-
 .filter__button__span:active {
     color: rgb(239 68 68); 
 }
 
 .filter__button__select{
-    display: flex;line-height: 16.56px;
+    display: flex;
+    line-height: 16.56px;
     align-items: center;
     padding: 4px 8px;
     gap: 4px;
-    background: rgb(239 68 68);
-    border: 1px solid rgb(239 68 68);
-    border-radius: 8px;
+    background: #333; /* aquí */
+
 }
 
 .filter__button__span__selected {
@@ -43,5 +50,24 @@
     font-size: 14px;
     line-height: 16.56px;
     text-transform: uppercase;
-    color: #fff;
+    color: red;
+}
+
+/* nuevo */
+/* Ícono dentro del círculo */
+.filter__button img {
+    width: 50px; /* Ajusta el tamaño del ícono */
+    height: 50px;
+    object-fit: contain; /* Asegura que el ícono mantenga sus proporciones */
+}
+
+.filter__text {
+    font-style: normal;
+    font-weight: 700;
+    font-family: Jost;
+    font-size: 13px;
+    line-height: 16.56px;
+    text-transform: uppercase;
+    color: #333;
+    padding-top: 12px;
 }

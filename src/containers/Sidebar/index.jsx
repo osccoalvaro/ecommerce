@@ -16,7 +16,7 @@ const Sidebar = () => {
       return `• ${item.title} (S/ ${item.price}) https://ecommerce-alk.pages.dev/product/${item.id}`;
     }).join('\n'); // \n es el carácter de salto de línea
     
-    const message = `Hola, estoy interesado en los siguientes productos:\n${productList}\n\nTotal: S/ ${total}`;
+    const message = `Hola, estoy interesado en el siguiente producto:\n${productList}\n\nTotal: S/ ${total}`;
     const encodedMessage = encodeURIComponent(message);
     const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
