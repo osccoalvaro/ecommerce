@@ -21,8 +21,8 @@ const ProductsFilter = ({ setItems, menuItems, filterItems, products }) => {
         slidesPerView={4} // Muestra 4 botones a la vez
         breakpoints={{
           640: { slidesPerView: 6 }, // Ajustar según el ancho de pantalla
-          480: { slidesPerView: 4 },
-          320: { slidesPerView: 3 },
+          480: { slidesPerView: 4.5 },
+          320: { slidesPerView: 3.5 },
         }}
         className="md:hidden" // Ocultar en pantallas grandes
       >
