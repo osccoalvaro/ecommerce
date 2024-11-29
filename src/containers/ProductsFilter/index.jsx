@@ -32,7 +32,7 @@ const ProductsFilter = ({ setItems, menuItems, filterItems, products }) => {
               setItems(products), handleFilter("Todos");
             }}
             content="Todos"
-            icon="/todos.png"
+            icon="/todos2.svg"
             selectedCategory={selectedCategory}
           />
         </SwiperSlide>
@@ -67,7 +67,7 @@ const ProductsFilter = ({ setItems, menuItems, filterItems, products }) => {
             setItems(products), handleFilter("Todos");
           }}
           content="Todos"
-          icon="/todos.png"
+          icon="/todos.svg"
           selectedCategory={selectedCategory}
         />
         {menuItems.map((item) => {

@@ -6,7 +6,7 @@
       "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
       "category": "Placa Madre",
       "image": "/motherboard1.png",
-      "icon": "/motherboard.png"
+      "icon": "/placa-real.png"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "category": "Placa Madre",
         "image": "/motherboard2.jpg",
-        "icon": "/motherboard.png"
+        "icon": "/placa-real.png"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "category": "Placa Madre",
         "image": "/motherboard3.jpg",
-        "icon": "/motherboard.png"
+        "icon": "/placa-real.png"
     },
     {
       "id": 4,
@@ -33,7 +33,7 @@
       "description": "Descripción del Producto 2",
       "category": "Procesador",
       "image": "/procesador1.jpg",
-      "icon": "/processor.png"
+      "icon": "/cpu-real.png"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "description": "Descripción del Producto 2",
         "category": "Procesador",
         "image": "/procesador2.jpg",
-        "icon": "/processor.png"
+        "icon": "/cpu-real.png"
       },
     {
         "id": 6,
@@ -51,7 +51,7 @@
         "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "category": "Memoria RAM",
         "image": "/ram1.jpg",
-        "icon": "/memory.png"
+        "icon": "/ram-real.png"
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@
         "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Tarjeta gráfica",
         "image": "/tarjeta1.jpg",
-        "icon": "/gpu.png"
+        "icon": "/tarjeta-real.png"
     },
     {
         "id": 8,
@@ -78,7 +78,7 @@
         "description": "Marca: ESET\nModelo: NOD 32\nCapacidad: 1 PC\nRequisitos del sistema: Windows\nTiempo: 12 meses",
         "category": "Almacenamiento",
         "image": "/ss1.jpg",
-        "icon": "/ssd-drive.png"
+        "icon": "/ssd-real.png"
     },
     {
         "id": 10,
@@ -87,7 +87,7 @@
         "description": "Marca: ESET\nModelo: NOD 32\nCapacidad: 1 PC\nRequisitos del sistema: Windows\nTiempo: 12 meses",
         "category": "Fuente de poder",
         "image": "/fuente1.jpg",
-        "icon": "/power-supply.png"
+        "icon": "/fuente-real.png"
     },
     {
         "id": 11,
@@ -96,7 +96,7 @@
         "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Case",
         "image": "/case1.jpg",
-        "icon": "/computer-case.png"
+        "icon": "/case-real.png"
     }
   ]
   
