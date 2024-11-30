@@ -13,7 +13,7 @@
         "id": 2,
         "title": "TITULO PLACA MADRE",
         "marca": "GIGABYTE",
-        "price": 29.99,
+        "price": 1500.99,
         "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "category": "Placa Madre",
         "image": "/motherboard2.jpg",
@@ -23,7 +23,7 @@
         "id": 3,
         "title": "TITULO PLACA MADRE",
         "marca": "MSI",
-        "price": 29.99,
+        "price": 10.99,
         "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "category": "Placa Madre",
         "image": "/motherboard2.jpg",
@@ -33,7 +33,7 @@
         "id": 4,
         "title": "TITULO PLACA MADRE",
         "marca": "ASRock",
-        "price": 29.99,
+        "price": 500.99,
         "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "category": "Placa Madre",
         "image": "/motherboard3.jpg",
@@ -109,9 +109,29 @@
           "image": "/motherboard2.jpg",
           "icon": "/placa-real.png"
       },
+      {
+        "id": 12,
+        "title": "TITULO PLACA MADRE",
+        "marca": "MSI",
+        "price": 29.99,
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
+        "category": "Placa Madre",
+        "image": "/motherboard2.jpg",
+        "icon": "/placa-real.png"
+    },
+    {
+        "id": 13,
+        "title": "TITULO PLACA MADRE",
+        "marca": "MSI",
+        "price": 29.99,
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
+        "category": "Placa Madre",
+        "image": "/motherboard2.jpg",
+        "icon": "/placa-real.png"
+    },
 
     {
-      "id": 12,
+      "id": 14,
       "title": "TITULO PROCESADOR",
       "marca": "Intel",
       "price": 19.99,
@@ -121,7 +141,7 @@
       "icon": "/cpu-real.png"
     },
     {
-        "id": 13,
+        "id": 15,
         "title": "TITULO PROCESADOR",
         "marca": "AMD",
         "price": 19.99,
@@ -131,7 +151,7 @@
         "icon": "/cpu-real.png"
       },
     {
-        "id": 14,
+        "id": 16,
         "title": "TITULO RAM",
         "marca": "Kingston FURY",
         "price": 19.99,
@@ -141,7 +161,7 @@
         "icon": "/ram-real.png"
     },
     {
-        "id": 15,
+        "id": 17,
         "title": "TITULO GRÁFICA",
         "marca": "ASUS",
         "price": 19.99,
@@ -151,7 +171,7 @@
         "icon": "/tarjeta-real.png"
     },
     {
-        "id": 16,
+        "id": 18,
         "title": "TITULO GRÁFICA",
         "marca": "GIGABYTE",
         "price": 19.99,
@@ -161,7 +181,7 @@
         "icon": "/tarjeta-real.png"
     },
     {
-        "id": 17,
+        "id": 19,
         "title": "TITULO GRÁFICA",
         "marca": "MSI",
         "price": 19.99,
@@ -171,7 +191,7 @@
         "icon": "/gpu.png"
     },
     {
-        "id": 18,
+        "id": 20,
         "title": "TITULO SSD",
         "marca": "Kingston",
         "price": 19.99,
@@ -181,7 +201,7 @@
         "icon": "/ssd-real.png"
     },
     {
-        "id": 19,
+        "id": 21,
         "title": "TITULO SSD",
         "marca": "Kingston FURY",
         "price": 19.99,
@@ -191,7 +211,7 @@
         "icon": "/ssd-real.png"
     },
     {
-        "id": 20,
+        "id": 22,
         "title": "TITULO FUENTE",
         "marca": "CORSAIR",
         "price": 19.99,
@@ -201,10 +221,10 @@
         "icon": "/fuente-real.png"
     },
     {
-        "id": 21,
+        "id": 23,
         "title": "TITULO CASE",
         "marca": "Antryx",
-        "price": 19.99,
+        "price": 2019.99,
         "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Case",
         "image": "/case1.jpg",

@@ -31,6 +31,9 @@
             ],
             "~FilterButton/*": [
                 "src/components/FilterButton/*"
+            ],
+            "~BrandSlider/*": [
+                "src/components/BrandSlider/*"
             ]
         }
     }
