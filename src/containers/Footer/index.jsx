@@ -1,4 +1,5 @@
 import { FOOTER_INFO } from "~/constants";
+import whatsapp from "~assets/whatsapp.svg";
 
 const Footer = () => {
   /* const { content } = FOOTER_INFO; */
@@ -85,13 +86,13 @@ const Footer = () => {
 		/* Copyright */
 		<div class="bg-black/5  text-center text-white text-sm pb-6 m-auto max-w-screen-2xl lg:px-20">
 			<hr class="my-4 border-t-2 border-white max-w-screen-2xl "/>
-			<span>2024 Tienda Hecho con ❤️️ en Perú</span>
+			<span>2024 Tienda</span>
 		</div>
 
   /* Whatsapp */
   <div id="whatsapp">
     <a href="https://wa.me/51997567217?text=Hola,%20me%20gustaría%20obtener%20más%20información" target="_blank" className="fixed bottom-5 right-5 z-50 flex items-center justify-center bg-green-500 text-white font-bold rounded-full shadow-md w-12 h-12">
-      <img src="/src/assets/whatsapp.svg" alt="whatsapp" className="w-6 h-6" />
+      <img src={whatsapp} alt="whatsapp" className="w-6 h-6" />
     </a>
   </div>
 

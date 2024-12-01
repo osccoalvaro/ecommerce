@@ -193,8 +193,8 @@ const Home = () => {
                   onChange={(e) => setSortOrder(e.target.value)}
                   className="py-2 px-4 border rounded"
                 >
-                  <option value="asc">De bajo a alto</option>
-                  <option value="desc">De alto a bajo</option>
+                  <option value="asc">Menor precio</option>
+                  <option value="desc">Mayor precio</option>
                 </select>
               </div>
 
