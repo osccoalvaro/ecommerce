@@ -124,6 +124,23 @@ const Home = () => {
                     </button>
                   ))}
                 </div>
+                {/* Combo box para móviles */}
+                <div className="block md:hidden">
+                  <select
+                    className="w-full border rounded py-2 px-4"
+                    value={selectedCategory || ""}
+                    onChange={(e) =>
+                      filterByCategory(e.target.value || null)
+                    }
+                  >
+                    <option value="">Todas las Categorías</option>
+                    {menuItems.map((category) => (
+                      <option key={category} value={category}>
+                        {category}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
 
               <div>
@@ -142,6 +159,23 @@ const Home = () => {
                       {brand}
                     </button>
                   ))}
+                </div>
+                {/* Combo box para móviles */}
+                <div className="block md:hidden">
+                  <select
+                    className="w-full border rounded py-2 px-4"
+                    value={selectedBrand || ""}
+                    onChange={(e) =>
+                      filterByBrand(e.target.value || null)
+                    }
+                  >
+                    <option value="">Todas las Marcas</option>
+                    {allBrands.map((brand) => (
+                      <option key={brand} value={brand}>
+                        {brand}
+                      </option>
+                    ))}
+                  </select>
                 </div>
               </div>
             </div>
