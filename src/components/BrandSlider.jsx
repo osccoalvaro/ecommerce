@@ -5,11 +5,17 @@ import "swiper/css/pagination";
 
 import { Autoplay } from "swiper/modules";
 
+import dell from "~assets/dell.png";
+import msi from "~assets/msi.png";
+import lenovo from "~assets/lenovo.png";
+import hp from "~assets/hp.png";
+
+
 const brands = [
-  { id: 1, name: "Dell", logo: "src/assets/dell.png" },
-  { id: 2, name: "MSI", logo: "src/assets/msi.png" },
-  { id: 3, name: "Lenovo", logo: "src/assets/lenovo.png" },
-  { id: 4, name: "HP", logo: "src/assets/hp.png" },
+  { id: 1, name: "Dell", logo: dell },
+  { id: 2, name: "MSI", logo: msi },
+  { id: 3, name: "Lenovo", logo: lenovo },
+  { id: 4, name: "HP", logo: hp },
 ];
 
 const BrandSlider = () => {
