@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-      primary: "hola",
+      primary: "Jost",
     },
     container: {
       padding: {
