@@ -5,9 +5,6 @@ import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 
 import dell from "~assets/laptop.webp";
-import msi from "~assets/msi.png";
-import lenovo from "~assets/lenovo.png";
-import hp from "~assets/laptop-lenovo.png";
 
 const NewArrivals = () => {
   const products = [
