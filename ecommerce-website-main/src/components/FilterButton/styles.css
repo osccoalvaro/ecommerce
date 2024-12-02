@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'hola';
+    src: url('../../../src/assets/font/Product\ Sans\ Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'hola';
+    src: url('../../../src/assets/font/Product\ Sans\ Bold.ttf') format('truetype');
+    font-weight: 700;
+    letter-spacing: 1em;
+}
+body {
+    font-family: 'hola';    
+}
+
 .filter__button {
     display: flex;
     padding: 4px 8px;
