@@ -20,20 +20,11 @@
             "~/*": [
                 "src/*"
             ],
-            "~CartItem/*": [
-                "src/components/CartItem/*"
-            ],
             "~constants/*": [
                 "src/constants/*"
             ],
-            "~ProductsFilter/*": [
-                "src/containers/ProductsFilter/*"
-            ],
-            "~FilterButton/*": [
-                "src/components/FilterButton/*"
-            ],
-            "~BrandSlider/*": [
-                "src/components/BrandSlider/*"
+            "~font/*": [
+                "src/assets/font/*"
             ]
         }
     }

@@ -5,10 +5,10 @@ import "swiper/css/pagination";
 
 import { Autoplay } from "swiper/modules";
 
-import dell from "~assets/dell.png";
-import msi from "~assets/msi.png";
-import lenovo from "~assets/lenovo.png";
-import hp from "~assets/hp.png";
+import dell from "~assets/dell3.png";
+import msi from "~assets/msi3.png";
+import lenovo from "~assets/lenovo3.png";
+import hp from "~assets/hp3.png";
 
 
 const brands = [
@@ -41,8 +41,8 @@ const BrandSlider = () => {
         >
           {duplicatedBrands.map((brand, index) => (
             <SwiperSlide key={index}>
-              <div className="flex justify-center items-center bg-white shadow-md rounded-lg p-4 my-4 border-solid border border-gray-100">
-                <img src={brand.logo} alt={brand.name} className="h-11 object-contain" />
+              <div className="flex justify-center items-center bg-[#F8F9FA] rounded-lg p-6 my-4">
+                <img src={brand.logo} alt={brand.name} className="h-12 object-contain" />
               </div>
             </SwiperSlide>
           ))}

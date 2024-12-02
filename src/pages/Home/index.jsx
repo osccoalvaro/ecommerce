@@ -3,6 +3,7 @@ import Product from "~components/Product";
 import Hero from "~containers/Hero";
 import { ProductContext } from "~contexts/ProductContext";
 import BrandSlider from "~components/BrandSlider";
+import NewArrivals from "~components/NewArrivals";
 
 const Home = () => {
   const { products } = useContext(ProductContext);
@@ -102,6 +103,7 @@ const Home = () => {
     <div>
       <Hero />
       <BrandSlider />
+      <NewArrivals />
       <section className="py-16">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:space-x-8">
@@ -185,7 +187,7 @@ const Home = () => {
               {/* Controles de ordenamiento */}
               <div className="flex justify-end items-center mb-4">
                 <label htmlFor="sortOrder" className="mr-2 text-lg font-semibold">
-                  Precio:
+                  Ordenar por:
                 </label>
                 <select
                   id="sortOrder"

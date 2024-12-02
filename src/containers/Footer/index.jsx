@@ -1,5 +1,7 @@
 import { FOOTER_INFO } from "~/constants";
 import whatsapp from "~assets/whatsapp.svg";
+import visa from "~assets/visa.png";
+import logo from "~assets/logo.png";
 
 const Footer = () => {
   /* const { content } = FOOTER_INFO; */
@@ -10,7 +12,7 @@ const Footer = () => {
 			<div class="flex flex-col lg:flex-row justify-between items-center">
       /* Left section */
 				<div class="flex-1 my-5 md:mt-0  lg:mb-0 order-2 md:order-none">
-					<img class="h-10 lg:h-11" src="/src/assets/logo.png" alt=""/>
+					<img class="h-10 lg:h-11" src={logo} alt=""/>
 					<div class="flex space-x-4 mt-5 justify-center md:justify-normal">
 						<a aria-label="Facebook del Colegio Montessori" href=""
 							class="w-9 h-9 rounded-full bg-gray-800 flex justify-center items-center ">
@@ -79,7 +81,7 @@ const Footer = () => {
 				</div>
 				/* Right section */
 				<div class="flex-1 flex justify-end h-20">
-					<img src="/src/assets/visa.png" alt="" class="hidden md:block"/>
+					<img src={visa} alt="" class="hidden md:block"/>
 				</div>
 			</div>
 		</div>
