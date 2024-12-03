@@ -22,9 +22,6 @@
             ],
             "~constants/*": [
                 "src/constants/*"
-            ],
-            "~font/*": [
-                "src/assets/font/*"
             ]
         }
     }
