@@ -230,5 +230,72 @@
         "image": "/laptop-lenovo.png",
         "icon": "/case-real.png"
     }
+    ,
+    {
+        "id": 24,
+        "title": "Google Pixel Tablet",
+        "subtitle": "Ayuda al alcance de tu mano",
+        "marca": "Dell",
+        "price": 399,
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
+        "category": "Categoría",
+        "image": "/laptop.webp",
+        "icon": "/case-real.png",
+        "state": true
+    }
+    ,
+    {
+        "id": 25,
+        "title": "Apple iPad Pro",
+        "subtitle": "El futuro en tus manos",
+        "marca": "Dell",
+        "price": 899,
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
+        "category": "Categoría",
+        "image": "/laptop.webp",
+        "icon": "/case-real.png",
+        "state": true
+    }
+    ,
+    {
+        "id": 26,
+        "title": "Samsung Galaxy Tab S8",
+        "subtitle": "Innovación en cada toque",
+        "marca": "Dell",
+        "price": 799,
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
+        "category": "Categoría",
+        "image": "/laptop.webp",
+        "icon": "/case-real.png",
+        "state": true
+    }
+    ,
+    {
+        "id": 27,
+        "title": "Lenovo Tab P11",
+        "subtitle": "Ideal para el día a día",
+        "marca": "Dell",
+        "price": 299,
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
+        "category": "Categoría",
+        "image": "/laptop.webp",
+        "icon": "/case-real.png",
+        "state": true
+    }
+    ,
+    {
+        "id": 28,
+        "title": "Microsoft Surface Go",
+        "subtitle": "Productividad al máximo",
+        "marca": "Dell",
+        "price": 599,
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
+        "category": "Categoría",
+        "image": "/laptop.webp",
+        "icon": "/case-real.png",
+        "state": true
+    }
+
   ]
   
+

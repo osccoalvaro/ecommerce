@@ -50,7 +50,7 @@ const ProductDetails = () => {
             <div className="text-base md:text-lg lg:text-xl text-red-500 font-medium mb-6">
               S/ {price}
             </div>
-            
+
 
             <p className="mb-8 text-sm">
               {description.split('\n').map((line, index) => (
@@ -62,42 +62,39 @@ const ProductDetails = () => {
             </p>
 
             <div className="flex flex-col md:flex-row items-center gap-4">
-  <button
-    className="bg-primary py-4 px-8 text-white text-base md:mr-10"
-    onClick={() => addToCart(product, product.id)}
-  >
-    Agregar al carrito
-  </button>
-  <a
-    href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-      whatsappMessage
-    )}`}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-green-500 pr-8 pl-16 py-3 text-white text-base flex items-center gap-4 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300 relative"
-  >
-    <div className="absolute -left-6">
-      <img
-        src="/img/avatar4.jpg" // Ruta del avatar
-        alt="Asesor Comercial"
-        className="h-20 rounded-full border-2 border-white shadow-md"
-      />
-    </div>
-    <div className="flex flex-col">
-      <span className="font-semibold text-sm">
-        Asesor Comercial 
-        <span className="bg-white text-green-500 rounded-full text-xs px-2 py-[2px] ml-1">
-          Online
-        </span>
-      </span>
-      <span className="text-sm font-medium">Información vía WhatsApp</span>
-    </div>
-  </a>
-</div>
+              <button
+                className="bg-primary py-4 px-8 text-white text-base md:mr-10"
+                onClick={() => addToCart(product, product.id)}
+              >
+                Agregar al carrito
+              </button>
+              <a
+                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+                  whatsappMessage
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 pr-8 pl-16 py-3 text-white text-base flex items-center gap-4 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300 relative"
+              >
+                <div className="absolute -left-6">
+                  <img
+                    src="/img/avatar4.jpg" // Ruta del avatar
+                    alt="Asesor Comercial"
+                    className="h-20 rounded-full border-2 border-white shadow-md"
+                  />
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-semibold text-sm">
+                    Asesor Comercial
+                    <span className="bg-white text-green-500 rounded-full text-xs px-2 py-[2px] ml-1">
+                      Online
+                    </span>
+                  </span>
+                  <span className="text-sm font-medium">Información vía WhatsApp</span>
+                </div>
+              </a>
+            </div>
 
-
-
-        
           </div>
         </div>
       </div>
