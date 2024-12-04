@@ -4,6 +4,7 @@ import Hero from "~containers/Hero";
 import { ProductContext } from "~contexts/ProductContext";
 import BrandSlider from "~components/BrandSlider";
 import NewArrivals from "~components/NewArrivals";
+import PromotionSection from "~components/PromotionSection";
 
 const Home = () => {
   const { products } = useContext(ProductContext);
@@ -235,6 +236,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <PromotionSection />
     </div>
   );
 };
