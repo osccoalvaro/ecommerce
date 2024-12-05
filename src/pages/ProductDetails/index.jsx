@@ -51,8 +51,12 @@ const ProductDetails = () => {
               S/ {price}
             </div>
 
+            <div className="border border-gray-300 rounded-lg p-4 bg-gray-50 text-gray-700 w-64">
+              Intel Core i3 CPU, 8 GB RAM, <br />
+              256 GB storage
+            </div>
 
-            <p className="mb-8 text-sm">
+            <p className="mb-8 text-sm mt-7">
               {description.split('\n').map((line, index) => (
                 <React.Fragment key={index}>
                   {line}
