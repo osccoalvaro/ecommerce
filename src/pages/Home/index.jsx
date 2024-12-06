@@ -13,13 +13,12 @@ const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedBrand, setSelectedBrand] = useState(null);
   const [allBrands, setAllBrands] = useState([]);
-
-  // Estado para la paginación
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
 
-  // Estado para ordenamiento
-  const [sortOrder, setSortOrder] = useState("asc"); // "asc" para ascendente, "desc" para descendente
+  const [sortOrder, setSortOrder] = useState("asc");
+  const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
+  const [isFiltersMenuOpen, setIsFiltersMenuOpen] = useState(false); // Estado para mostrar ambos filtros
 
   useEffect(() => {
     setItems(products);
@@ -76,12 +75,10 @@ const Home = () => {
     }
   }, [selectedCategory, products]);
 
-  // Ordenar productos
   const sortedItems = [...items].sort((a, b) => {
     return sortOrder === "asc" ? a.price - b.price : b.price - a.price;
   });
 
-  // Cálculo de productos visibles
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = sortedItems.slice(indexOfFirstItem, indexOfLastItem);
@@ -108,105 +105,128 @@ const Home = () => {
       <section className="py-16">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:space-x-8">
-            {/* Filtros */}
-            <div className="w-full md:w-1/4 mb-4 md:mb-0">
-              <div className="mb-8">
-                <h4 className="text-xl font-bold mb-4">Filtrar por Categoría</h4>
-                <div className="hidden md:flex flex-col space-y-4">
-                  {menuItems.map((category) => (
-                    <button
-                      key={category}
-                      className={`py-2 px-4 rounded ${
-                        selectedCategory === category
-                          ? "bg-blue-500 text-white"
-                          : "bg-gray-200"
-                      }`}
-                      onClick={() => filterByCategory(category)}
-                    >
-                      {category}
-                    </button>
-                  ))}
-                </div>
-                {/* Combo box para móviles */}
-                <div className="block md:hidden">
-                  <select
-                    className="w-full border rounded py-2 px-4"
-                    value={selectedCategory || ""}
-                    onChange={(e) =>
-                      filterByCategory(e.target.value || null)
-                    }
-                  >
-                    <option value="">Todas las Categorías</option>
-                    {menuItems.map((category) => (
-                      <option key={category} value={category}>
-                        {category}
-                      </option>
-                    ))}
-                  </select>
-                </div>
+            <div className="w-full md:w-1/4 md:mb-0">
+              {/* Botones de filtros para móvil */}
+              <div className="mb-8 md:hidden flex">
+              <button
+  onClick={() => {
+    setIsFiltersMenuOpen(!isFiltersMenuOpen);
+    setIsSortMenuOpen(false); // Cierra el menú de Ordenar por
+  }}
+  className="py-5 px-4 bg-[#F8F9FA] text-base w-full flex items-center justify-center space-x-2"
+>
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3c4043"><path d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z"/></svg>
+  <span>Filtros</span>
+</button>
+
+<button
+  onClick={() => {
+    setIsSortMenuOpen(!isSortMenuOpen);
+    setIsFiltersMenuOpen(false); // Cierra el menú de Filtros
+  }}
+  className="py-5 px-4 bg-[#F8F9FA] text-base w-full flex items-center justify-center border-l border[#E9EAEC]border-solid"
+>
+
+  <span>Ordenar por</span>   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3c4043"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+</button>
+
+                
               </div>
 
-              <div>
-                <h4 className="text-xl font-bold mb-4">Filtrar por Marca</h4>
-                <div className="hidden md:flex flex-col space-y-4">
-                  {allBrands.map((brand) => (
-                    <button
-                      key={brand}
-                      className={`py-2 px-4 rounded ${
-                        selectedBrand === brand
-                          ? "bg-blue-500 text-white"
-                          : "bg-gray-200"
-                      }`}
-                      onClick={() => filterByBrand(brand)}
-                    >
-                      {brand}
-                    </button>
+              {/* Filtros en móviles */}
+              <div className={`mb-8 ${isFiltersMenuOpen ? "block" : "hidden"} md:block`}>
+                {/* Filtro por Categoría */}
+          
+                <div className="hidden md:flex items-center mb-4">  {/* Add the `flex` and `items-center` classes */}
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3c4043"><path d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z"/></svg>
+
+  <h4 className="text-xl font-bold  pl-3">Filtros</h4>
+</div>
+
+
+
+                <h4 className="text-3xl font-bold mb-4">Categoría</h4>
+                <div className="flex flex-col space-y-2">
+                  {menuItems.map((category) => (
+                    <label key={category} className="flex items-center">
+                      <input
+                        type="checkbox"
+                        className="form-checkbox h-4 w-4 text-blue-600"
+                        checked={selectedCategory === category}
+                        onChange={() => filterByCategory(category)}
+                      />
+                      <span class="ml-4">{category}</span>
+                    </label>
                   ))}
                 </div>
-                {/* Combo box para móviles */}
-                <div className="block md:hidden">
-                  <select
-                    className="w-full border rounded py-2 px-4"
-                    value={selectedBrand || ""}
-                    onChange={(e) =>
-                      filterByBrand(e.target.value || null)
-                    }
-                  >
-                    <option value="">Todas las Marcas</option>
-                    {allBrands.map((brand) => (
-                      <option key={brand} value={brand}>
-                        {brand}
-                      </option>
-                    ))}
-                  </select>
+
+                {/* Filtro por Marca */}
+                <h4 className="text-3xl font-bold mt-6 mb-4">Marca</h4>
+                <div className="flex flex-col space-y-2">
+                  {allBrands.map((brand) => (
+                    <label key={brand} className="flex items-center">
+                      <input
+                        type="checkbox"
+                        className="form-checkbox h-4 w-4 text-blue-600"
+                        checked={selectedBrand === brand}
+                        onChange={() => filterByBrand(brand)}
+                      />
+                      <span class="ml-4">{brand}</span>
+                    </label>
+                  ))}
                 </div>
               </div>
             </div>
 
             {/* Productos y ordenamiento */}
             <div className="w-full md:w-3/4">
-              {/* Controles de ordenamiento */}
-              <div className="flex justify-end items-center mb-4">
-                <label htmlFor="sortOrder" className="mr-2 text-lg font-semibold">
-                  Ordenar por:
-                </label>
-                <select
-                  id="sortOrder"
-                  value={sortOrder}
-                  onChange={(e) => setSortOrder(e.target.value)}
-                  className="py-2 px-4 border rounded"
-                >
-                  <option value="asc">Menor precio</option>
-                  <option value="desc">Mayor precio</option>
-                </select>
+              {/* Solo botón de ordenamiento visible según el tamaño de pantalla */}
+              <div className="flex justify-end items-center mb-4 relative">
+                {/* Menú emergente en móvil */}
+                {isSortMenuOpen && (
+                  <div className="absolute top-0 left-0 right-0 bg-white shadow-md z-10 p-4 mt-50 rounded">
+                    <div className="flex flex-col space-y-2">
+                      <button
+                        onClick={() => {
+                          setSortOrder("asc");
+                          setIsSortMenuOpen(false);
+                        }}
+                        className="py-2 px-4 border rounded"
+                      >
+                        Menor precio
+                      </button>
+                      <button
+                        onClick={() => {
+                          setSortOrder("desc");
+                          setIsSortMenuOpen(false);
+                        }}
+                        className="py-2 px-4 border rounded"
+                      >
+                        Mayor precio
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {/* Solo select para escritorio */}
+                <div className="hidden md:block">
+                  <label htmlFor="sortOrder" className="mr-2 text-lg font-semibold">
+                    Ordenar por:
+                  </label>
+                  <select
+                    id="sortOrder"
+                    value={sortOrder}
+                    onChange={(e) => setSortOrder(e.target.value)}
+                    className="py-2 px-4 border rounded"
+                  >
+                    <option value="asc">Menor precio</option>
+                    <option value="desc">Mayor precio</option>
+                  </select>
+                </div>
               </div>
 
               {/* Productos */}
-              <div
-                className="
-                grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px]
-                "
-              >
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px]">
                 {currentItems.map((product) => (
                   <Product product={product} key={product.id} />
                 ))}
