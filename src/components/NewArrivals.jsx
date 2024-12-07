@@ -20,7 +20,7 @@ const NewArrivals = () => {
       <div className="max-w-screen-xl mx-auto px-4">
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={20}
+          spaceBetween={0}
           slidesPerView={1}
           loop={true}
           autoplay={{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: true }}
@@ -36,7 +36,7 @@ const NewArrivals = () => {
                 <Link
                   to={`/product/${product.id}`} // Asegúrate de que la ruta esté configurada en tu enrutador
                 >
-              <div className="relative bg-white rounded-lg border p-6 text-center">
+              <div className="relative bg-white border-y border-r p-6 text-center">
                 {/* Decorativo amarillo */}
                 <div className="absolute top-0 right-6 bg-[#F29900] text-white rounded-b-3xl px-1 py-2 flex items-center shadow-lg">
                   <svg
@@ -50,12 +50,15 @@ const NewArrivals = () => {
                 </div>
 
                 {/* Contenido del producto */}
-                <img src={product.image} alt={product.name} className="w-full rounded-md mb-4" />
+                
+
+                
+                <img src={product.image} alt={product.name} className="rounded-md mb-4 w-56 mx-auto" />
                 <span className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded-full inline-block mb-2">Nuevo</span>
                 <h3 className="text-lg font-semibold">{product.title}</h3>
                 <p className="text-sm text-gray-600 mb-2">{product.subtitle}</p>
                 <p className="text-xl font-bold">S/{product.price}</p>
-
+                
              
               
                 

@@ -254,7 +254,7 @@
         "price": 899,
         "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Categoría",
-        "image": "/laptop.webp",
+        "image": "/ssd-real.png",
         "icon": "/case-real.png",
         "state": true
     }
@@ -280,7 +280,7 @@
         "price": 299,
         "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Categoría",
-        "image": "/laptop.webp",
+        "image": "/mouse.png",
         "icon": "/case-real.png",
         "state": true
     }
@@ -293,7 +293,7 @@
         "price": 599,
         "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Categoría",
-        "image": "/laptop.webp",
+        "image": "/ssd-real.png",
         "icon": "/case-real.png",
         "state": true
     }
