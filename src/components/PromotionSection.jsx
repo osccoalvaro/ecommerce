@@ -4,7 +4,7 @@ import BannerLaptop from "~assets/banner-laptop.webp"; // Importa la imagen
 const PromotionSection = () => {
   return (
     <section className="relative bg-gray-50 py-12 mt-11">
-      <div className="max-w-screen-xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-center md:text-left">
+      <div className="max-w-screen-xl mx-auto px-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-center md:text-left">
         {/* Columna de texto */}
         <div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800">

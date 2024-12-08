@@ -107,7 +107,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row md:space-x-8">
             <div className="w-full md:w-1/4 md:mb-0">
               {/* Botones de filtros para móvil */}
-              <div className="mb-8 md:hidden flex">
+              <div className="md:hidden flex">
               <button
   onClick={() => {
     setIsFiltersMenuOpen(!isFiltersMenuOpen);
@@ -140,12 +140,12 @@ const Home = () => {
                 <div className="hidden md:flex items-center mb-4">  {/* Add the `flex` and `items-center` classes */}
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3c4043"><path d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z"/></svg>
 
-  <h4 className="text-xl font-bold  pl-3">Filtros</h4>
+  <h4 className="text-lg font-bold  pl-3">Filtros</h4>
 </div>
 
 
 
-                <h4 className="text-3xl font-bold mb-4">Categoría</h4>
+                <h4 className="text-2xl font-bold mb-4 mt-4">Categoría</h4>
                 <div className="flex flex-col space-y-2">
                   {menuItems.map((category) => (
                     <label key={category} className="flex items-center">
@@ -161,7 +161,7 @@ const Home = () => {
                 </div>
 
                 {/* Filtro por Marca */}
-                <h4 className="text-3xl font-bold mt-6 mb-4">Marca</h4>
+                <h4 className="text-2xl font-bold mt-6 mb-4">Marca</h4>
                 <div className="flex flex-col space-y-2">
                   {allBrands.map((brand) => (
                     <label key={brand} className="flex items-center">
@@ -175,8 +175,11 @@ const Home = () => {
                     </label>
                   ))}
                 </div>
+                <h4 className="text-2xl font-bold mt-6 mb-4">Stock</h4>
+
               </div>
             </div>
+
 
             {/* Productos y ordenamiento */}
             <div className="w-full md:w-3/4">
@@ -185,13 +188,13 @@ const Home = () => {
                 {/* Menú emergente en móvil */}
                 {isSortMenuOpen && (
                   <div className="absolute top-0 left-0 right-0 bg-white shadow-md z-10 p-4 mt-50 rounded">
-                    <div className="flex flex-col space-y-2">
+                    <div className="flex flex-col">
                       <button
                         onClick={() => {
                           setSortOrder("asc");
                           setIsSortMenuOpen(false);
                         }}
-                        className="py-2 px-4 border rounded"
+                        className="py-2 px-4 border-x border-t"
                       >
                         Menor precio
                       </button>
@@ -200,7 +203,7 @@ const Home = () => {
                           setSortOrder("desc");
                           setIsSortMenuOpen(false);
                         }}
-                        className="py-2 px-4 border rounded"
+                        className="py-2 px-4 border-x border-y"
                       >
                         Mayor precio
                       </button>
@@ -210,17 +213,17 @@ const Home = () => {
 
                 {/* Solo select para escritorio */}
                 <div className="hidden md:block">
-                  <label htmlFor="sortOrder" className="mr-2 text-lg font-semibold">
+                  <label htmlFor="sortOrder" className="text-lg font-bold">
                     Ordenar por:
                   </label>
                   <select
                     id="sortOrder"
                     value={sortOrder}
                     onChange={(e) => setSortOrder(e.target.value)}
-                    className="py-2 px-4 border rounded"
+                    className="py-2 px-1"
                   >
-                    <option value="asc">Menor precio</option>
-                    <option value="desc">Mayor precio</option>
+                    <option value="asc">menor precio</option>
+                    <option value="desc">mayor precio</option>
                   </select>
                 </div>
               </div>

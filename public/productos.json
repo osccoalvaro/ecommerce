@@ -2,302 +2,343 @@
     {
       "id": 1,
       "title": "TITULO",
+      "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
       "marca": "ASUS",
       "price": 29.99,
-      "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
       "category": "Laptop",
       "image": "/laptop-lenovo.png",
-      "icon": "/placa-real.png"
+      "icon": "/placa-real.png",
+      "state": false,
+      "stock":  20
     },
     {
         "id": 2,
         "title": "TITULO",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "marca": "HP",
         "price": 1500.99,
-        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "category": "Laptop",
         "image": "/laptop-lenovo.png",
-        "icon": "/placa-real.png"
+        "icon": "/placa-real.png",
+        "state": false,
+        "stock":  20
     },
     {
         "id": 3,
         "title": "Microsoft Surface Go",
         "subtitle": "Innovación en cada toque",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "marca": "MSI",
         "price": 20.99,
-        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "category": "Laptop",
         "image": "/laptop.webp",
         "icon": "/placa-real.png",
-        "state": true
+        "state": true,
+        "stock":  20
     },
     {
         "id": 4,
         "title": "TITULO",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "marca": "HP",
         "price": 500.99,
-        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "category": "Laptop",
         "image": "/laptop-lenovo.png",
-        "icon": "/placa-real.png"
+        "icon": "/placa-real.png",
+        "state": false,
+        "stock":  20
     },
     {
         "id": 5,
         "title": "TITULO",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "marca": "ASUS",
         "price": 29.99,
-        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "category": "Laptop",
         "image": "/laptop-lenovo.png",
-        "icon": "/placa-real.png"
-      },
-      {
-          "id": 6,
-          "title": "TITULO",
-          "marca": "HP",
-          "price": 29.99,
-          "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
-          "category": "Laptop",
-          "image": "/laptop-lenovo.png",
-          "icon": "/placa-real.png"
-      },
-      {
-          "id": 7,
-          "title": "TITULO",
-          "marca": "MSI",
-          "price": 29.99,
-          "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
-          "category": "Laptop",
-          "image": "/laptop-lenovo.png",
-          "icon": "/placa-real.png"
-      },
-      {
-          "id": 8,
-          "title": "TITULO",
-          "marca": "HP",
-          "price": 29.99,
-          "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
-          "category": "Laptop",
-          "image": "/laptop-lenovo.png",
-          "icon": "/placa-real.png"
-      },
-      {
-        "id": 9,
+        "icon": "/placa-real.png",
+        "state": false,
+        "stock":  20
+    },
+    {
+        "id": 6,
         "title": "TITULO",
-        "marca": "ASUS",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
+        "marca": "HP",
         "price": 29.99,
-        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "category": "Laptop",
         "image": "/laptop-lenovo.png",
-        "icon": "/placa-real.png"
-      },
-      {
-          "id": 10,
-          "title": "TITULO",
-          "marca": "HP",
-          "price": 29.99,
-          "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
-          "category": "Laptop",
-          "image": "/laptop-lenovo.png",
-          "icon": "/placa-real.png"
-      },
-      {
-          "id": 11,
-          "title": "TITULO",
-          "marca": "MSI",
-          "price": 29.99,
-          "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
-          "category": "Laptop",
-          "image": "/laptop-lenovo.png",
-          "icon": "/placa-real.png"
-      },
-      {
-        "id": 12,
+        "icon": "/placa-real.png",
+        "state": false,
+        "stock":  20
+    },
+    {
+        "id": 7,
         "title": "TITULO",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "marca": "MSI",
         "price": 29.99,
-        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "category": "Laptop",
         "image": "/laptop-lenovo.png",
-        "icon": "/placa-real.png"
+        "icon": "/placa-real.png",
+        "state": false,
+        "stock":  20
+    },
+    {
+        "id": 8,
+        "title": "TITULO",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
+        "marca": "HP",
+        "price": 29.99,
+        "category": "Laptop",
+        "image": "/laptop-lenovo.png",
+        "icon": "/placa-real.png",
+        "state": false,
+        "stock":  20
+    },
+    {
+        "id": 9,
+        "title": "TITULO",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
+        "marca": "ASUS",
+        "price": 29.99,
+        "category": "Laptop",
+        "image": "/laptop-lenovo.png",
+        "icon": "/placa-real.png",
+        "state": false,
+        "stock":  20
+    },
+    {
+        "id": 10,
+        "title": "TITULO",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
+        "marca": "HP",
+        "price": 29.99,
+        "category": "Laptop",
+        "image": "/laptop-lenovo.png",
+        "icon": "/placa-real.png",
+        "state": false,
+        "stock":  20
+    },
+    {
+        "id": 11,
+        "title": "TITULO",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
+        "marca": "MSI",
+        "price": 29.99,
+        "category": "Laptop",
+        "image": "/laptop-lenovo.png",
+        "icon": "/placa-real.png",
+        "state": false,
+        "stock":  20
+    },
+    {
+        "id": 12,
+        "title": "TITULO",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
+        "marca": "MSI",
+        "price": 29.99,
+        "category": "Laptop",
+        "image": "/laptop-lenovo.png",
+        "icon": "/placa-real.png",
+        "state": false,
+        "stock":  20
     },
     {
         "id": 13,
         "title": "TITULO",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "marca": "MSI",
         "price": 29.99,
-        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "category": "Laptop",
         "image": "/laptop-lenovo.png",
-        "icon": "/placa-real.png"
+        "icon": "/placa-real.png",
+        "state": false,
+        "stock":  20
     },
-
     {
-      "id": 14,
-      "title": "TITULO",
-      "marca": "Lenovo",
-      "price": 30.99,
-      "description": "Descripción del Producto 2",
-      "category": "Laptop Gaming",
-      "image": "/laptop-lenovo.png",
-      "icon": "/cpu-real.png"
+        "id": 14,
+        "title": "TITULO",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
+        "marca": "Lenovo",
+        "price": 30.99,
+        "category": "Laptop Gaming",
+        "image": "/laptop-lenovo.png",
+        "icon": "/cpu-real.png",
+        "state": false,
+        "stock":  20
     },
     {
         "id": 15,
         "title": "TITULO",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "marca": "Lenovo",
         "price": 30.99,
-        "description": "Descripción del Producto 2",
         "category": "Laptop Gaming",
         "image": "/laptop-lenovo.png",
-        "icon": "/cpu-real.png"
-      },
+        "icon": "/cpu-real.png",
+        "state": false,
+        "stock":  20
+    },
     {
         "id": 16,
         "title": "TITULO",
+        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "marca": "Lenovo",
         "price": 30.99,
-        "description": "Modelo: 255 G10\nPantalla: 15.6 HD (1366 x 768)\nAlmacenamiento: 256GB SSD M.2\nVideo: Gráficos AMD Radeon",
         "category": "Laptop Gaming",
         "image": "/laptop-lenovo.png",
-        "icon": "/ram-real.png"
+        "icon": "/ram-real.png",
+        "state": false,
+        "stock":  20
     },
     {
         "id": 17,
         "title": "TITULO",
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "marca": "ASUS",
         "price": 30.99,
-        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Laptop 2 en 1",
         "image": "/laptop-lenovo.png",
-        "icon": "/tarjeta-real.png"
+        "icon": "/tarjeta-real.png",
+        "state": false,
+        "stock":  20
     },
     {
         "id": 18,
         "title": "TITULO",
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "marca": "Lenovo",
         "price": 30.99,
-        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Laptop 2 en 1",
         "image": "/laptop-lenovo.png",
-        "icon": "/tarjeta-real.png"
+        "icon": "/tarjeta-real.png",
+        "state": false,
+        "stock":  20
     },
     {
         "id": 19,
         "title": "TITULO",
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "marca": "MSI",
         "price": 30.99,
-        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Laptop 2 en 1",
         "image": "/laptop-lenovo.png",
-        "icon": "/gpu.png"
+        "icon": "/gpu.png",
+        "state": false,
+        "stock":  20
     },
     {
         "id": 20,
         "title": "TITULO",
+        "description": "Marca: ESET\nModelo: NOD 32\nCapacidad: 1 PC\nRequisitos del sistema: Windows\nTiempo: 12 meses",
         "marca": "Lenovo",
         "price": 10.99,
-        "description": "Marca: ESET\nModelo: NOD 32\nCapacidad: 1 PC\nRequisitos del sistema: Windows\nTiempo: 12 meses",
         "category": "Categoría",
         "image": "/laptop-lenovo.png",
-        "icon": "/ssd-real.png"
+        "icon": "/ssd-real.png",
+        "state": false,
+        "stock":  20
     },
     {
         "id": 21,
         "title": "TITULO",
+        "description": "Marca: ESET\nModelo: NOD 32\nCapacidad: 1 PC\nRequisitos del sistema: Windows\nTiempo: 12 meses",
         "marca": "Dell",
         "price": 10.99,
-        "description": "Marca: ESET\nModelo: NOD 32\nCapacidad: 1 PC\nRequisitos del sistema: Windows\nTiempo: 12 meses",
         "category": "Categoría",
         "image": "/laptop-lenovo.png",
-        "icon": "/ssd-real.png"
+        "icon": "/ssd-real.png",
+        "state": false,
+        "stock":  20
     },
     {
         "id": 22,
         "title": "TITULO",
+        "description": "Marca: ESET\nModelo: NOD 32\nCapacidad: 1 PC\nRequisitos del sistema: Windows\nTiempo: 12 meses",
         "marca": "Dell",
         "price": 299.99,
-        "description": "Marca: ESET\nModelo: NOD 32\nCapacidad: 1 PC\nRequisitos del sistema: Windows\nTiempo: 12 meses",
         "category": "Categoría",
         "image": "/laptop-lenovo.png",
-        "icon": "/fuente-real.png"
+        "icon": "/fuente-real.png",
+        "state": false,
+        "stock":  20
     },
     {
         "id": 23,
         "title": "TITULO",
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "marca": "Dell",
         "price": 2019.99,
-        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Categoría",
         "image": "/laptop-lenovo.png",
-        "icon": "/case-real.png"
-    }
-    ,
+        "icon": "/case-real.png",
+        "state": false,
+        "stock":  20
+    },
     {
         "id": 24,
         "title": "Google Pixel Tablet",
         "subtitle": "Ayuda al alcance de tu mano",
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "marca": "Dell",
         "price": 399,
-        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Categoría",
         "image": "/laptop.webp",
         "icon": "/case-real.png",
-        "state": true
-    }
-    ,
+        "state": true,
+        "stock":  20
+    },
     {
         "id": 25,
         "title": "Apple iPad Pro",
         "subtitle": "El futuro en tus manos",
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "marca": "Dell",
         "price": 899,
-        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Categoría",
         "image": "/ssd-real.png",
         "icon": "/case-real.png",
-        "state": true
-    }
-    ,
+        "state": true,
+        "stock":  20
+    },
     {
         "id": 26,
         "title": "Samsung Galaxy Tab S8",
         "subtitle": "Innovación en cada toque",
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "marca": "Dell",
         "price": 799,
-        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Categoría",
         "image": "/laptop.webp",
         "icon": "/case-real.png",
-        "state": true
-    }
-    ,
+        "state": true,
+        "stock":  20
+    },
     {
         "id": 27,
         "title": "Lenovo Tab P11",
         "subtitle": "Ideal para el día a día",
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "marca": "Dell",
         "price": 299,
-        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Categoría",
         "image": "/mouse.png",
         "icon": "/case-real.png",
-        "state": true
-    }
-    ,
+        "state": true,
+        "stock":  20
+    },
     {
         "id": 28,
         "title": "Microsoft Surface Go",
         "subtitle": "Productividad al máximo",
+        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "marca": "Dell",
         "price": 599,
-        "description": "Marca: LOGITECH\nModelo: MK120\nNúmero de Parte: 920-004428\nRDimensiones del Teclado: 155 × 450 × 23.5 mm",
         "category": "Categoría",
         "image": "/ssd-real.png",
         "icon": "/case-real.png",
-        "state": true
+        "state": true,
+        "stock":  20
     }
-
-  ]
-  
-
+]

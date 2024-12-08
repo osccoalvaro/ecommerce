@@ -28,20 +28,20 @@ const BrandSlider = () => {
         <Swiper
           modules={[Autoplay]}
           slidesPerView={6}  // Por defecto, mostramos 5 en desktop
-          spaceBetween={50}  // Espacio entre las marcas
+          spaceBetween={10}  // Espacio entre las marcas
           autoplay={{ delay: 3000 }}
           loop={true}  // Habilitar el scroll infinito
           speed={1000}  // Tiempo en ms para la transición de los slides
           effect="slide"  // Tipo de transición (puedes usar "fade", "slide", etc.)
           breakpoints={{
-            320: { slidesPerView: 2 }, // En pantallas pequeñas (móviles) mostramos 2
+            320: { slidesPerView: 3 }, // En pantallas pequeñas (móviles) mostramos 2
             640: { slidesPerView: 3 }, // En pantallas medianas (tablets) mostramos 3
             1024: { slidesPerView: 6 }, // En pantallas grandes mostramos 5
           }}
         >
           {duplicatedBrands.map((brand, index) => (
             <SwiperSlide key={index}>
-              <div className="flex justify-center items-center bg-[#F8F9FA] rounded-lg p-6 my-4">
+              <div className="flex justify-center items-center bg-white rounded-lg my-4 mt-12">
                 <img src={brand.logo} alt={brand.name} className="h-12 object-contain" />
               </div>
             </SwiperSlide>
