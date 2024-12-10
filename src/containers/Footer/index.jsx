@@ -8,9 +8,9 @@ const Footer = () => {
   return (
     <footer class="bg-primary lg:mt-32">
 		<div class="lg:px-20 lg:mt-24 m-auto max-w-screen-2xl pt-10">
-    /* Flex container to arrange columns */
+    
 			<div class="flex flex-col lg:flex-row justify-between items-center">
-      /* Left section */
+      
 				<div class="flex-1 my-5 md:mt-0  lg:mb-0 order-2 md:order-none">
 					<img class="h-10 lg:h-11" src={logo} alt=""/>
 					<div class="flex space-x-4 mt-5 justify-center md:justify-normal">
@@ -44,7 +44,7 @@ const Footer = () => {
 						</a>
 					</div>
 				</div>
-				/* Center section */
+				
 				<div class="flex-1 order-1 md:order-none">
 					<p class="mb-4 flex  text-white">
 						<span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
@@ -79,19 +79,19 @@ const Footer = () => {
 						+51 969 300 999
 					</p>
 				</div>
-				/* Right section */
+				
 				<div class="flex-1 flex justify-end h-20">
 					<img src={visa} alt="" class="hidden md:block"/>
 				</div>
 			</div>
 		</div>
-		/* Copyright */
+		
 		<div class="bg-black/5  text-center text-white text-sm pb-6 m-auto max-w-screen-2xl lg:px-20">
 			<hr class="my-4 border-t-2 border-white max-w-screen-2xl "/>
 			<span>2024 Tienda</span>
 		</div>
 
-  /* Whatsapp */
+  
   <div id="whatsapp">
     <a href="https://wa.me/51997567217?text=Hola,%20me%20gustaría%20obtener%20más%20información" target="_blank" className="fixed bottom-5 right-5 z-50 flex items-center justify-center bg-green-500 text-white font-bold rounded-full shadow-md w-12 h-12">
       <img src={whatsapp} alt="whatsapp" className="w-6 h-6" />

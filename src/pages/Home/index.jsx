@@ -102,10 +102,10 @@ const Home = () => {
       <Hero />
       <BrandSlider />
       <NewArrivals />
-      <section className="py-16">
+      <section className="py-16 ">
         <div className="container mx-auto">
-          <div className="flex flex-col md:flex-row md:space-x-8">
-            <div className="w-full md:w-1/4 md:mb-0">
+          <div className="flex flex-col md:flex-row">
+            <div className="md:ml-10 md:w-[20%] md:mb-0">
               {/* Botones de filtros para móvil */}
               <div className="md:hidden flex">
               <button
@@ -145,7 +145,7 @@ const Home = () => {
 
 
 
-                <h4 className="text-2xl font-bold mb-4 mt-4">Categoría</h4>
+                <h4 className="text-2xl font-bold mb-4 mt-[22px] border-t-[1px] pt-5">Categoría</h4>
                 <div className="flex flex-col space-y-2">
                   {menuItems.map((category) => (
                     <label key={category} className="flex items-center">
@@ -175,8 +175,15 @@ const Home = () => {
                     </label>
                   ))}
                 </div>
-                <h4 className="text-2xl font-bold mt-6 mb-4">Stock</h4>
-
+                <h4 className="text-2xl font-bold mt-6 mb-4">Diponibilidad</h4>
+                <label className="flex items-center">
+                      <input
+                        type="checkbox"
+                        className="form-checkbox h-4 w-4 text-blue-600"
+                        
+                      />
+                      <span class="ml-4">En stock</span>
+                    </label>
               </div>
             </div>
 
@@ -187,7 +194,7 @@ const Home = () => {
               <div className="flex justify-end items-center mb-4 relative">
                 {/* Menú emergente en móvil */}
                 {isSortMenuOpen && (
-                  <div className="absolute top-0 left-0 right-0 bg-white shadow-md z-10 p-4 mt-50 rounded">
+                  <div className="absolute top-0 left-0 right-0 bg-white shadow-md z-10 p-4 mt-50 rounded-b">
                     <div className="flex flex-col">
                       <button
                         onClick={() => {
@@ -229,7 +236,7 @@ const Home = () => {
               </div>
 
               {/* Productos */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {currentItems.map((product) => (
                   <Product product={product} key={product.id} />
                 ))}
