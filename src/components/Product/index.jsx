@@ -21,7 +21,7 @@ const Product = ({ product }) => {
               />
             </div>
           </div>
-        </Link>
+        
 
         {/* Mostrar etiqueta "Nuevo" si el producto tiene state === true */}
         {product.state && (
@@ -48,7 +48,7 @@ const Product = ({ product }) => {
           <div className="text-sm capitalize text-gray-500 mb-1">{specification}</div>
           <h2 className="font-semibold text-lg mb-1 ">S/ {price}</h2>
         </div>
-
+        </Link>
         {/* Botones flotantes */}
         <div
           className="

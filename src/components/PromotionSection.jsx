@@ -14,7 +14,7 @@ const PromotionSection = () => {
             Si buscas una computadora que sea rápida, segura e inteligente, lo encontrarás todo en tu próxima Chromebook.
           </p>
           <button className="mt-6 bg-blue-500 text-white px-6 py-3 rounded-md shadow hover:bg-blue-600">
-            Descubra los productos
+            Descubre los productos
           </button>
         </div>
 

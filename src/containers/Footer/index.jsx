@@ -7,7 +7,7 @@ const Footer = () => {
   /* const { content } = FOOTER_INFO; */
   return (
     <footer class="bg-white lg:mt-32">
-		<div class="lg:px-20 lg:mt-24 m-auto max-w-screen-xl p-10">
+		<div class="lg:px-20 lg:mt-24 m-auto max-w-screen-xl p-5">
 
 			<hr class="my-4 border-t-1 border-[#D8DFEA] max-w-screen-2xl "/>
 	

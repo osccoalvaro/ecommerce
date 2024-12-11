@@ -148,10 +148,10 @@ const Home = () => {
                 <h4 className="text-2xl font-bold mb-4 mt-[22px] border-t-[1px] pt-5">Categoría</h4>
                 <div className="flex flex-col space-y-2">
                   {menuItems.map((category) => (
-                    <label key={category} className="flex items-center">
+                    <label key={category} className="flex items-center cursor-pointer">
                       <input
                         type="checkbox"
-                        className="form-checkbox h-4 w-4 text-blue-600"
+                        className="form-checkbox h-4 w-4 text-blue-600 cursor-pointer mb-1"
                         checked={selectedCategory === category}
                         onChange={() => filterByCategory(category)}
                       />
@@ -164,10 +164,10 @@ const Home = () => {
                 <h4 className="text-2xl font-bold mt-6 mb-4">Marca</h4>
                 <div className="flex flex-col space-y-2">
                   {allBrands.map((brand) => (
-                    <label key={brand} className="flex items-center">
+                    <label key={brand} className="flex items-center cursor-pointer">
                       <input
                         type="checkbox"
-                        className="form-checkbox h-4 w-4 text-blue-600"
+                        className="form-checkbox h-4 w-4 text-blue-600 cursor-pointer mb-1"
                         checked={selectedBrand === brand}
                         onChange={() => filterByBrand(brand)}
                       />
@@ -176,10 +176,10 @@ const Home = () => {
                   ))}
                 </div>
                 <h4 className="text-2xl font-bold mt-6 mb-4">Diponibilidad</h4>
-                <label className="flex items-center">
+                <label className="flex items-center cursor-pointer">
                       <input
                         type="checkbox"
-                        className="form-checkbox h-4 w-4 text-blue-600"
+                        className="form-checkbox h-4 w-4 text-blue-600 cursor-pointer mb-1"
                         
                       />
                       <span class="ml-4">En stock</span>
@@ -227,7 +227,7 @@ const Home = () => {
                     id="sortOrder"
                     value={sortOrder}
                     onChange={(e) => setSortOrder(e.target.value)}
-                    className="py-2 px-1"
+                    className="py-2 px-1 cursor-pointer"
                   >
                     <option value="asc">menor precio</option>
                     <option value="desc">mayor precio</option>
